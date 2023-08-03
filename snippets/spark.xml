@@ -5,7 +5,7 @@
            fetch="https://gitlab.com" />
 
   <remote name="spark"
-          fetch="git@github.com/Spark-Rom-Next"
+          fetch="ssh://git@github.com/Spark-Rom-Next/"
           revision="refs/heads/pyro-next"/>
 
   <remote  name="evo"
@@ -70,9 +70,6 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="manifest" name="manifest" remote="spark" />
-
-  <!-- Hardware repos -->
-  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="spark" />
 
   <!-- Packages repos -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="spark" />
